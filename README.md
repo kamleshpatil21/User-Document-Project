@@ -66,14 +66,15 @@ Ensure you have the following installed:
 ```bash
 git clone https://github.com/<your-username>/user-document-management.git
 cd user-document-management
-2. Install Dependencies
+
+### 2. Install Dependencies
 bash
 Copy
 Edit
 npm install
 # or
 yarn install
-3. Set Environment Variables
+### 3. Set Environment Variables
 Create a .env file in the root directory:
 
 env
@@ -83,7 +84,7 @@ Edit
 PORT=3000
 ALLOWED_ORIGINS=http://localhost:3000,http://yourfrontend.com
 
-4. Run the Application
+### 4. Run the Application
 bash
 Copy
 Edit
