@@ -65,6 +65,7 @@ Ensure you have the following installed:
 
 
 git clone https://github.com/<your-username>/user-document-management.git
+
 cd user-document-management
 
 
@@ -79,7 +80,7 @@ Create a .env file in the root directory:
 ### env
 
 PORT=3000
-ALLOWED_ORIGINS=http://localhost:3000,http://yourfrontend.com
+ALLOWED_ORIGINS=http://localhost:3000
 
 ### 4. Run the Application
 
@@ -88,8 +89,11 @@ npm run start:dev
 
 ### Production
 npm run build
+
 npm run start:prod
+
 🔐 Security Features
+
 Helmet: Secures HTTP headers.
 
 Rate Limiting: Limits requests to prevent abuse (100 requests per 15 minutes).
