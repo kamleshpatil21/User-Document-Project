@@ -63,9 +63,10 @@ Ensure you have the following installed:
 
 ### 1. Clone the Repository
 
-```bash
+
 git clone https://github.com/<your-username>/user-document-management.git
 cd user-document-management
+
 
 ### 2. Install Dependencies
 bash
@@ -74,7 +75,7 @@ Edit
 npm install
 # or
 yarn install
-### 3. Set Environment Variables
+# 3. Set Environment Variables
 Create a .env file in the root directory:
 
 env
@@ -84,7 +85,7 @@ Edit
 PORT=3000
 ALLOWED_ORIGINS=http://localhost:3000,http://yourfrontend.com
 
-### 4. Run the Application
+# 4. Run the Application
 bash
 Copy
 Edit
@@ -109,7 +110,7 @@ Copy
 Edit
 http://localhost:<PORT>/api
 
-🌍 Deployment
+# 🌍 Deployment
 
 You can deploy the project on:
 
@@ -147,3 +148,5 @@ git commit -m "Initial commit"
 # Set branch and push
 git branch -M main
 git push -u origin main
+
+
