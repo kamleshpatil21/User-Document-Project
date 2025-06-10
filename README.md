@@ -22,78 +22,127 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+# 📄 User Document Management API
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+A secure and scalable RESTful API built with **NestJS** for managing user documents, integrated with Swagger for API documentation, CORS and security middleware, and rate limiting.
 
-## Project setup
+---
+
+## 🚀 Features
+
+- NestJS architecture for modular development
+- Swagger UI for API documentation
+- Global validation using DTOs
+- Helmet for securing HTTP headers
+- Rate limiting to prevent abuse
+- CORS enabled with environment-based configuration
+
+---
+
+## 📦 Tech Stack
+
+- **Framework:** NestJS (Node.js + Express)
+- **Security:** Helmet, Rate Limit
+- **Validation:** class-validator + class-transformer
+- **Docs:** Swagger (OpenAPI)
+- **Environment Config:** dotenv
+
+---
+
+## 🛠️ Installation
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js (v16 or later)
+- npm or yarn
+- Git
+
+---
+
+### 1. Clone the Repository
 
 ```bash
-$ npm install
-```
+git clone https://github.com/<your-username>/user-document-management.git
+cd user-document-management
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+# or
+yarn install
+3. Set Environment Variables
+Create a .env file in the root directory:
 
-## Compile and run the project
+env
 
-```bash
-# development
-$ npm run start
+Copy
+Edit
+PORT=3000
+ALLOWED_ORIGINS=http://localhost:3000,http://yourfrontend.com
 
-# watch mode
-$ npm run start:dev
+4. Run the Application
+bash
+Copy
+Edit
+# Development
+npm run start:dev
 
-# production mode
-$ npm run start:prod
-```
+# Production
+npm run build
+npm run start:prod
+🔐 Security Features
+Helmet: Secures HTTP headers.
 
-## Run tests
+Rate Limiting: Limits requests to prevent abuse (100 requests per 15 minutes).
 
-```bash
-# unit tests
-$ npm run test
+CORS: Restricts access to defined origins (set in .env).
 
-# e2e tests
-$ npm run test:e2e
+🔎 API Documentation
+Once the app is running, access Swagger UI at:
 
-# test coverage
-$ npm run test:cov
-```
+bash
+Copy
+Edit
+http://localhost:<PORT>/api
 
-## Deployment
+🌍 Deployment
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+You can deploy the project on:
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+Render
 
-```bash
-$ npm install -g mau
-$ mau deploy
-```
+Heroku
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+Vercel (via serverless)
 
-## Resources
+Docker + Any Cloud Provider
 
-Check out a few resources that may come in handy when working with NestJS:
+Ensure you:
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+Set your .env in production
 
-## Support
+Allow necessary CORS origins
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Map correct port (usually 3000)
 
-## Stay in touch
+🐙 Pushing to GitHub
+Step-by-step:
+bash
+Copy
+Edit
+# Initialize git repo (if not already)
+git init
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+# Add remote origin
+git remote add origin https://github.com/<your-username>/user-document-management.git
 
-## License
+# Add and commit changes
+git add .
+git commit -m "Initial commit"
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+# Set branch and push
+git branch -M main
+git push -u origin main
