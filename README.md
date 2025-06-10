@@ -75,7 +75,7 @@ Edit
 npm install
 # or
 yarn install
-# 3. Set Environment Variables
+### 3. Set Environment Variables
 Create a .env file in the root directory:
 
 env
@@ -85,14 +85,14 @@ Edit
 PORT=3000
 ALLOWED_ORIGINS=http://localhost:3000,http://yourfrontend.com
 
-# 4. Run the Application
+### 4. Run the Application
 bash
 Copy
 Edit
-# Development
+### Development
 npm run start:dev
 
-# Production
+### Production
 npm run build
 npm run start:prod
 🔐 Security Features
@@ -110,7 +110,7 @@ Copy
 Edit
 http://localhost:<PORT>/api
 
-# 🌍 Deployment
+### 🌍 Deployment
 
 You can deploy the project on:
 
@@ -138,14 +138,14 @@ Edit
 # Initialize git repo (if not already)
 git init
 
-# Add remote origin
+### Add remote origin
 git remote add origin https://github.com/<your-username>/user-document-management.git
 
-# Add and commit changes
+### Add and commit changes
 git add .
 git commit -m "Initial commit"
 
-# Set branch and push
+### Set branch and push
 git branch -M main
 git push -u origin main
 
