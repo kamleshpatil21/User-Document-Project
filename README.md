@@ -69,26 +69,20 @@ cd user-document-management
 
 
 ### 2. Install Dependencies
-bash
-Copy
-Edit
+
 npm install
 # or
 yarn install
 ### 3. Set Environment Variables
 Create a .env file in the root directory:
 
-env
+### env
 
-Copy
-Edit
 PORT=3000
 ALLOWED_ORIGINS=http://localhost:3000,http://yourfrontend.com
 
 ### 4. Run the Application
-bash
-Copy
-Edit
+
 ### Development
 npm run start:dev
 
@@ -105,9 +99,7 @@ CORS: Restricts access to defined origins (set in .env).
 🔎 API Documentation
 Once the app is running, access Swagger UI at:
 
-bash
-Copy
-Edit
+
 http://localhost:<PORT>/api
 
 ### 🌍 Deployment
@@ -132,9 +124,7 @@ Map correct port (usually 3000)
 
 🐙 Pushing to GitHub
 Step-by-step:
-bash
-Copy
-Edit
+
 # Initialize git repo (if not already)
 git init
 
